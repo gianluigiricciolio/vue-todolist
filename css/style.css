@@ -60,6 +60,7 @@
 
 .list > li{
     margin-bottom:10px;
+
 }
 
 li li{
@@ -68,4 +69,8 @@ li li{
 
 .done{
     text-decoration: line-through;
+}
+
+.canc{
+    margin-right: 5px;
 }

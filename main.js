@@ -40,7 +40,9 @@ const { createApp } = Vue
     },
 
     methods: {
-
+        deleteTodo(index){
+            this.toDos.splice(index,1);
+        }
     }
 
 

@@ -35,8 +35,9 @@
                         <h1>To Do</h1>
                         <ul class="list">
                         <!--LISTA NEW TASK-->
-                            <li v-for="task in toDos">
-                                <p :class="{done: task.done}" >{{task.text}}</p>
+                            <li v-for="(task, i) in toDos">
+                                <span @click="deleteTodo(i)" class="canc">X</span>
+                                <span :class="{done: task.done}" >{{task.text}}</span>
                             </li>
                             
                         </ul>
