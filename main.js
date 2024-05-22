@@ -34,7 +34,7 @@ const { createApp } = Vue
                 done: false
             },
         ],
-
+        toDoInput: ""
 
       }
     },
@@ -42,6 +42,14 @@ const { createApp } = Vue
     methods: {
         deleteTodo(index){
             this.toDos.splice(index,1);
+        },
+
+        addTodo() {
+            this.toDos.push({
+                text: this.toDoInput,
+                done: false
+            })
+            this.toDoInput="";
         }
     }
 

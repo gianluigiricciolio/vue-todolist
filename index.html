@@ -24,7 +24,8 @@
                 <div class="sec uno">
                     <!--NAVIGATORE CON PULSANTI-->
                     <nav>
-                        <span class="button task">Add Task</span>
+                        <input v-model="toDoInput" type="text" name="" id="add-todo">
+                        <span @click="addTodo()" class="button task">Add Task</span>
                         <span class="button section">Add Section</span>
                     </nav>
                 </div>
