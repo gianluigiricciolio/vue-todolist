@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* SEZIONE CONTENITORI */
+
+.content{
+    background-color: whitesmoke;
+    padding:35px;
+}
+
+.tie{
+    max-width: 800px;
+    margin:0px auto;
+    padding:20px 40px;
+}
+
+.sec{
+    background-color: white;
+    padding:20px 40px;
+    border-radius:8px;
+}
+
+.due{
+    margin-top:5px;
+}
+
+/* SEZIONE LOGO */
+.logo img, .logo span{
+    vertical-align: middle;
+}
+.logo{
+    padding:10px 20px;
+}
+
+.logo-text{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/* SEZIONE PULSANTI */
+.button{
+    padding:7px;
+    border-radius: 5px;
+}
+
+.task{
+    background-color: skyblue;
+    color:white;
+}
+
+.section{
+    background-color: white;
+    border:1px solid grey;
+    color:grey;
+}
+
+.list > li{
+    margin-bottom:10px;
+}
+
+li li{
+    margin-left:10px;
+}
+
+.done{
+    text-decoration: line-through;
+}
