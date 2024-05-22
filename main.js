@@ -45,11 +45,18 @@ const { createApp } = Vue
         },
 
         addTodo() {
-            this.toDos.push({
-                text: this.toDoInput,
-                done: false
-            })
-            this.toDoInput="";
+            if(this.toDoInput){
+                this.toDos.push({
+                    text: this.toDoInput,
+                    done: false
+                })
+                this.toDoInput="";
+            }
+            
+        },
+
+        invertDone(i){
+            this.toDos[i].done=!this.toDos[i].done;
         }
     }
 
