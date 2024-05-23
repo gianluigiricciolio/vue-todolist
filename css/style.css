@@ -8,6 +8,8 @@
 body{
     height:100vh;
     background-color: #6ED663;
+    user-select: none;
+
 }
 header{
     background-color: rgb(249, 244, 236);
