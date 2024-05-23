@@ -36,7 +36,7 @@
                             <ul class="list">
                             <!--LISTA NEW TASK-->
                                 <li v-for="(task, i) in toDos">
-                                    <span @click="deleteTodo(i)" class="canc">X</span>
+                                    <span @mouseenter="" @click="deleteTodo(i)" class="canc">X</span>
                                     <span @click="invertDone(i)" :class="{done: task.done}" >{{task.text}}</span>
                                     <hr>
                                 </li>

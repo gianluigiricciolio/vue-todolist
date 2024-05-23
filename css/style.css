@@ -44,7 +44,7 @@ h1{
 }
 
 .due{
-    margin-top:5px;
+    margin-top:10px;
     padding:40px 80px;
 }
 
@@ -82,7 +82,7 @@ h1{
 .list > li{
     margin-bottom:20px;
     padding:5px;
-    font-size: 1.2em;
+    font-size: 1.5em;
 
 }
 
@@ -98,4 +98,11 @@ li hr{
 
 .canc{
     margin-right: 20px;
-}
+    color: red;
+    border:2px solid red;
+    padding:0px 5px;
+} 
+
+.canc:hover{
+    cursor: pointer;
+} 
