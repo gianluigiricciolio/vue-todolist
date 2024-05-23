@@ -47,7 +47,7 @@ const { createApp } = Vue
         addTodo() {
             if(this.toDoInput){
                 this.toDos.push({
-                    text: this.toDoInput,
+                    text: this.toDoInput.trim(),
                     done: false
                 })
                 this.toDoInput="";

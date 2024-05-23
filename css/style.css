@@ -5,6 +5,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+nav{
+    display: flex;
+    justify-content:flex-end;
+    gap: 10px;
+}
+
+input{
+    padding-left: 5px;
+    font-size: 1em;
+    border: 1px solid #031732;
+}
+
 body{
     height:100vh;
     background-color: #6ED663;
@@ -14,6 +26,15 @@ body{
 header{
     background-color: rgb(249, 244, 236);
     padding: 15px;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    border: 1px solid #031732;
+}
+
+main{
+    overflow: auto;
+    padding-top: 100px;
 }
 
 h1{
@@ -35,14 +56,15 @@ h1{
 }
 
 .tie{
-    max-width: 1000px;
+    max-width: 800px;
     margin:0px auto;
 }
 
 .sec{
     background-color: rgb(249, 244, 236);
     padding:20px 40px;
-    border-radius:8px;
+    border: 1px solid #031732;
+
 }
 
 .due{
@@ -66,19 +88,32 @@ h1{
 
 
 /* SEZIONE PULSANTI */
-.button{
+.button.canc{
     padding:7px;
     border-radius: 5px;
 }
 
 .task{
-    background-color: skyblue;
+    background-color:#031732;
     color:white;
+    padding:12px;
+    border-radius: 5px;
+    border:1px solid #031732;
+    
+}
+.task:active{
+    background-color:white;
+    color: #031732;
+    border:1px solid #031732;
 }
 
 .section{
     border:1px solid grey;
     color:grey;
+}
+
+ul{
+    list-style: none;
 }
 
 .list > li{
@@ -100,10 +135,16 @@ li hr{
 
 .canc{
     margin-right: 20px;
-    color: red;
+    color: rgb(249, 244, 236);
+    background-color: rgb(249, 244, 236);
     border:2px solid red;
-    padding:0px 5px;
+    border-radius: 50%;
+    padding:0 3.5px;
+    font-size: 0.6em;
 } 
+.canc:hover{
+    color: red;
+}
 
 .canc:hover{
     cursor: pointer;

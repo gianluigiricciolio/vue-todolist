@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div id="app">
+    <div id="app" v-cloak>
         <header>
             <div class="logo">
                 <img src="./img/Logo.png" alt="Logo">
@@ -24,8 +24,11 @@
                     <div class="sec uno">
                         <!--NAVIGATORE CON PULSANTI-->
                         <nav>
+                            
+
                             <input @keydown.enter="addTodo()" v-model="toDoInput" type="text" name="" id="add-todo">
                             <span @click="addTodo()" class="button task">Add Task</span>
+                            
                         </nav>
                     </div>
                     <div class="sec due">    
@@ -36,7 +39,7 @@
                             <ul class="list">
                             <!--LISTA NEW TASK-->
                                 <li v-for="(task, i) in toDos">
-                                    <span @mouseenter="" @click="deleteTodo(i)" class="canc">X</span>
+                                    <button @mouseenter="" @click="deleteTodo(i)" class="canc">X</button>
                                     <span @click="invertDone(i)" :class="{done: task.done}" >{{task.text}}</span>
                                     <hr>
                                 </li>
