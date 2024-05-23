@@ -24,8 +24,7 @@
                     <div class="sec uno">
                         <!--NAVIGATORE CON PULSANTI-->
                         <nav>
-                            
-
+                            <input placeholder="Search through tasks" type="text">
                             <input @keydown.enter="addTodo()" v-model="toDoInput" type="text" name="" id="add-todo">
                             <span @click="addTodo()" class="button task">Add Task</span>
                             
@@ -39,7 +38,7 @@
                             <ul class="list">
                             <!--LISTA NEW TASK-->
                                 <li v-for="(task, i) in toDos">
-                                    <button @mouseenter="" @click="deleteTodo(i)" class="canc">X</button>
+                                    <button @mouseenter="" @click="deleteTodo(i)" class="canc">x</button>
                                     <span @click="invertDone(i)" :class="{done: task.done}" >{{task.text}}</span>
                                     <hr>
                                 </li>
