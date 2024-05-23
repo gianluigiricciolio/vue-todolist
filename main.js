@@ -10,29 +10,30 @@ const { createApp } = Vue
         // my properties
         toDos: [
             {
-                text: "prova",
+                text: "Prova task done",
                 done: true
             },
             {
-                text: "prova2",
+                text: "Prova 2",
                 done: false
             },
             {
-                text: "prova2",
+                text: "Prova 3",
                 done: false
             },
             {
-                text: "prova2",
+                text: "Prova 4",
                 done: false
             },
             {
-                text: "prova2",
+                text: "Prova 5",
                 done: false
             },
             {
-                text: "prova2",
+                text: "Prova 6",
                 done: false
             },
+           
         ],
         toDoInput: ""
 
