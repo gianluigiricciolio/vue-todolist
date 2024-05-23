@@ -4,27 +4,48 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+body{
+    height:100vh;
+    background-color: #6ED663;
+}
+header{
+    background-color: rgb(249, 244, 236);
+    padding: 15px;
+}
+
+h1{
+    font-size: 2.4em;
+    margin-left:40px;
+    color: #031732;
+}
+
+/* UTILITY */
+
+.m-b{
+    margin-bottom: 40px;
+}
+
 /* SEZIONE CONTENITORI */
 
 .content{
-    background-color: whitesmoke;
-    padding:35px;
+    padding-top:50px;
 }
 
 .tie{
-    max-width: 800px;
+    max-width: 1000px;
     margin:0px auto;
-    padding:20px 40px;
 }
 
 .sec{
-    background-color: white;
+    background-color: rgb(249, 244, 236);
     padding:20px 40px;
     border-radius:8px;
 }
 
 .due{
     margin-top:5px;
+    padding:40px 80px;
 }
 
 /* SEZIONE LOGO */
@@ -38,6 +59,7 @@
 .logo-text{
     font-size: 40px;
     font-weight: bold;
+    color: #031732;
 }
 
 
@@ -53,18 +75,21 @@
 }
 
 .section{
-    background-color: white;
     border:1px solid grey;
     color:grey;
 }
 
 .list > li{
-    margin-bottom:10px;
+    margin-bottom:20px;
+    padding:5px;
+    font-size: 1.2em;
 
 }
 
-li li{
-    margin-left:10px;
+li hr{
+    color: #A0A2B2;
+    background-color: #A0A2B2;
+    margin-top: 10px;
 }
 
 .done{
@@ -72,5 +97,5 @@ li li{
 }
 
 .canc{
-    margin-right: 5px;
+    margin-right: 20px;
 }
